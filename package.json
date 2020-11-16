@@ -4,12 +4,22 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build"
+    "build": "vue-cli-service build",
+    "electron:build": "vue-cli-service electron:build",
+    "electron:serve": "vue-cli-service electron:serve",
+    "postinstall": "electron-builder install-app-deps",
+    "postuninstall": "electron-builder install-app-deps"
   },
+  "main": "background.js",
   "dependencies": {
     "core-js": "^3.6.5",
+    "electron-updater": "^4.3.5",
+    "ffi-napi": "^3.0.1",
+    "serialport": "^9.0.2",
+    "sqlite3": "^5.0.0",
     "vue": "^2.6.11",
     "vue-router": "^3.2.0",
+    "electron-edge-js": "^12.8.1",
     "vuex": "^3.4.0"
   },
   "devDependencies": {
@@ -17,8 +27,11 @@
     "@vue/cli-plugin-router": "~4.5.0",
     "@vue/cli-plugin-vuex": "~4.5.0",
     "@vue/cli-service": "~4.5.0",
+    "electron": "^9.0.0",
+    "electron-rebuild": "^2.3.2",
     "sass": "^1.26.5",
     "sass-loader": "^8.0.2",
+    "vue-cli-plugin-electron-builder": "~2.0.0-rc.5",
     "vue-template-compiler": "^2.6.11"
   },
   "browserslist": [

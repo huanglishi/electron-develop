@@ -1,19 +1,19 @@
 # cerp
 
-## Project setup
+## 1.1、初始化项目
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### 1.2、运行项目
 ```
-npm run serve
+npm run electron:serve  或者 yarn electron:serve
 ```
 
 ### Compiles and minifies for production
 ```
-npm run build
+npm run electron:build 或者 yarn electron:build
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### 自己搭建项目请参考
+搭建项目 [Configuration Reference](https://github.com/huanglishi/electronvue).

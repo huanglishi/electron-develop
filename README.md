@@ -16,4 +16,4 @@ npm run electron:build 或者 yarn electron:build
 ```
 
 ### 自己搭建项目请参考
-搭建项目 [Configuration Reference](https://github.com/huanglishi/electronvue).
+搭建项目 [electronvue篇](https://github.com/huanglishi/electronvue).

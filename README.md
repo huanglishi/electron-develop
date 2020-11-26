@@ -2,6 +2,7 @@
 
 ## 1.1、初始化项目
 ```
+npm cache clear -f
 npm install
 ```
 
